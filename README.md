@@ -1,1 +1,1 @@
-# Csizmadia-Zsolt-Weisz-M-rk-M-sz-ly-N-t-n
+# Csizmadia-Zsolt-Weisz-Marko, Meszoly Natan
