@@ -18,3 +18,8 @@ Hirdetéskezelés: új jármű feladása adatokkal és képekkel, a saját hirde
 Kedvencek: az érdekesnek talált hirdetések elmentése.
 
 Adminisztrációs felület: hirdetések moderálása és felhasználók kezelése.
+
+
+Feladat felosztás / szerepkörök : Csizmadia Zsolt:
+                                  Weisz Márkó:
+                                  Mészöly Nátán:
