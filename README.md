@@ -11,11 +11,11 @@ Saját adatbázis a felhasználók és hirdetések biztonságos tárolására.
 
 Felhasználói Bejelentkezés és Regisztráció.
 
-Kereső és Szűrőrendszer: szűrés márka, modell, ár és évjárat szerint.
+Kereső és Szűrőrendszer: szűrés márka modell, ár és évjárat szerint.(adott autokra ralehet majd keresni ,nem az összes márkára/tipusra)
 
-Hirdetéskezelés: új jármű feladása adatokkal és képekkel, a saját hirdetések szerkesztése és törlése.
+Hirdetéskezelése: új jármű feladása adatokkal és képekkel a saját hirdetések szerkesztése és törlése.
 
-Kedvencek: az érdekesnek talált hirdetések elmentése.
+Kedvencek: az érdekesnek talált hirdetések elmentése.(ha megtetszik valamelyik auto)
 
 Adminisztrációs felület: hirdetések moderálása és felhasználók kezelése.
 
@@ -23,3 +23,4 @@ Adminisztrációs felület: hirdetések moderálása és felhasználók kezelés
 Feladat felosztás / szerepkörök : Csizmadia Zsolt:
                                   Weisz Márkó:
                                   Mészöly Nátán:
+                                  ezek meglesznek adva ha jelen lesz mindenki
