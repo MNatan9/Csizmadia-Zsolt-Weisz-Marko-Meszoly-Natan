@@ -6,6 +6,7 @@
     <title>AutoMarket</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -22,13 +23,19 @@
     </div>
 </header>
 
+
 <section class="hero">
     <div>
         <h2>Találd meg a következő autódat</h2>
         <p>Használtautók és motorok egyszerűen, egy helyen.</p>
 
         <div class="kereso">
-            <input type="text" id="kereses" placeholder="Márka vagy modell">
+
+            <input 
+                type="text" 
+                id="kereses" 
+                placeholder="Márka vagy modell"
+            >
 
             <select id="marka">
                 <option value="">Minden márka</option>
@@ -37,6 +44,7 @@
                 <option value="Ford">Ford</option>
                 <option value="Seat">Seat</option>
                 <option value="Volkswagen">Volkswagen</option>
+                <option value="Mercedes">Mercedes</option>
             </select>
 
             <select id="evjarat">
@@ -56,9 +64,11 @@
             </select>
 
             <button onclick="kereses()">Keresés</button>
+
         </div>
     </div>
 </section>
+
 
 <main>
 
@@ -72,10 +82,13 @@
         </div>
     </section>
 
+
     <section id="autok">
-        <h2>Eladó járművek</h2>
+
+        <h2>Eladó autók</h2>
 
         <div class="autok" id="jarmuvek">
+
 
             <div class="auto"
                 data-marka="BMW"
@@ -88,34 +101,331 @@
                 <div class="adatok">
                     <h3>BMW 320d</h3>
                     <p>2019 | 145 000 km | Dízel</p>
+                    <p class="ar">7 290 000 Ft</p>
+                    <p>Budapest</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
 
-</div>
-
-<div class="auto">
-    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80">
-    <h3>Mercedes AMG</h3>
-    <p>2018 | Benzin | 120 000 km</p>
-    <p class="ar">5 200 000 Ft</p>
-    <p>Budapest</p>
-    <button onclick="kedvenc(this)">Kedvencekhez</button>
-</div>
-
-<div class="auto">
-    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80">
-    <h3>Audi RS6</h3>
-    <p>2020 | Benzin | 180 000 km</p>
-    <p class="ar">4 200 000 Ft</p>
-    <p>Pécs</p>
-    <button onclick="kedvenc(this)">Kedvencekhez</button>
-</div>
-
-<div class="auto">
-    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80">
-    <h3>Fiat</h3>
-    <p>2005 | Benzin | 90 000 km</p>
-    <p class="ar">1 800 000 Ft</p>
-    <p>Szekszárd</p>
-    <button onclick="kedvenc(this)">Kedvencekhez</button>
-</div>
+            </div>
 
 
+            <div class="auto"
+                data-marka="Mercedes"
+                data-ev="2018"
+                data-ar="5200000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80">
+
+                <div class="adatok">
+                    <h3>Mercedes AMG</h3>
+                    <p>2018 | Benzin | 120 000 km</p>
+                    <p class="ar">5 200 000 Ft</p>
+                    <p>Budapest</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Audi"
+                data-ev="2020"
+                data-ar="4200000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80">
+
+                <div class="adatok">
+                    <h3>Audi RS6</h3>
+                    <p>2020 | Benzin | 180 000 km</p>
+                    <p class="ar">4 200 000 Ft</p>
+                    <p>Pécs</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Seat"
+                data-ev="2008"
+                data-ar="1490000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Seat Ibiza</h3>
+                    <p>2008 | Benzin | 165 000 km</p>
+                    <p class="ar">1 490 000 Ft</p>
+                    <p>Pécs</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Ford"
+                data-ev="2021"
+                data-ar="6890000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Ford Mustang</h3>
+                    <p>2021 | Benzin | 52 000 km</p>
+                    <p class="ar">6 890 000 Ft</p>
+                    <p>Győr</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Volkswagen"
+                data-ev="2017"
+                data-ar="3790000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Volkswagen Golf</h3>
+                    <p>2017 | Dízel | 130 000 km</p>
+                    <p class="ar">3 790 000 Ft</p>
+                    <p>Szekszárd</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="motorok">
+
+        <h2>Eladó motorok</h2>
+
+        <div class="autok">
+
+
+            <div class="auto"
+                data-marka="Yamaha"
+                data-ev="2020"
+                data-ar="2890000"
+                data-tipus="motor">
+
+                <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Yamaha MT-07</h3>
+                    <p>2020 | Benzin | 18 000 km</p>
+                    <p class="ar">2 890 000 Ft</p>
+                    <p>Pécs</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Kawasaki"
+                data-ev="2019"
+                data-ar="3190000"
+                data-tipus="motor">
+
+                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Kawasaki Ninja 650</h3>
+                    <p>2019 | Benzin | 22 000 km</p>
+                    <p class="ar">3 190 000 Ft</p>
+                    <p>Debrecen</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+
+            <div class="auto"
+                data-marka="Honda"
+                data-ev="2021"
+                data-ar="3990000"
+                data-tipus="motor">
+
+                <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>Honda CBR 600</h3>
+                    <p>2021 | Benzin | 14 000 km</p>
+                    <p class="ar">3 990 000 Ft</p>
+                    <p>Budapest</p>
+                    <button onclick="kedvenc(this)">Kedvencekhez</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="rolunk">
+
+        <h2>Rólunk</h2>
+
+        <p>
+            Az AutoMarket egy egyszerű és könnyen használható
+            használtautó- és motorhirdetési platform.
+        </p>
+
+        <p>
+            Célunk, hogy a vásárlók gyorsan megtalálják a megfelelő
+            járművet, az eladók pedig egyszerűen feladhassák hirdetéseiket.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 AutoMarket - Minden jog fenntartva.</p>
+</footer>
+
+
+<script>
+
+function bejelentkezes() {
+    alert("A bejelentkezés hamarosan elérhető!");
+}
+
+
+function hirdetes() {
+    alert("A hirdetés feladása hamarosan elérhető!");
+}
+
+
+function kedvenc(gomb) {
+    gomb.innerText = "✓ Kedvencekben";
+}
+
+
+function mutatAutok() {
+
+    const jarmuvek = document.querySelectorAll(".auto");
+
+    jarmuvek.forEach(function(auto) {
+
+        if (auto.dataset.tipus === "auto") {
+            auto.style.display = "block";
+        } else {
+            auto.style.display = "none";
+        }
+
+    });
+
+}
+
+
+function mutatMotorok() {
+
+    const jarmuvek = document.querySelectorAll(".auto");
+
+    jarmuvek.forEach(function(auto) {
+
+        if (auto.dataset.tipus === "motor") {
+            auto.style.display = "block";
+        } else {
+            auto.style.display = "none";
+        }
+
+    });
+
+}
+
+
+function mutatMindet() {
+
+    const jarmuvek = document.querySelectorAll(".auto");
+
+    jarmuvek.forEach(function(auto) {
+        auto.style.display = "block";
+    });
+
+}
+
+
+function kereses() {
+
+    const keresett = document
+        .getElementById("kereses")
+        .value
+        .toLowerCase();
+
+    const marka = document
+        .getElementById("marka")
+        .value;
+
+    const evjarat = document
+        .getElementById("evjarat")
+        .value;
+
+    const ar = document
+        .getElementById("ar")
+        .value;
+
+    const jarmuvek = document.querySelectorAll(".auto");
+
+
+    jarmuvek.forEach(function(auto) {
+
+        const szoveg = auto.innerText.toLowerCase();
+
+        const autoMarka = auto.dataset.marka;
+        const autoEv = Number(auto.dataset.ev);
+        const autoAr = Number(auto.dataset.ar);
+
+        let megfelel = true;
+
+
+        if (keresett && !szoveg.includes(keresett)) {
+            megfelel = false;
+        }
+
+
+        if (marka && autoMarka !== marka) {
+            megfelel = false;
+        }
+
+
+        if (evjarat && autoEv < Number(evjarat)) {
+            megfelel = false;
+        }
+
+
+        if (ar && autoAr > Number(ar)) {
+            megfelel = false;
+        }
+
+
+        if (megfelel) {
+            auto.style.display = "block";
+        } else {
+            auto.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
