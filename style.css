@@ -233,9 +233,7 @@ body {
 style.css
 2 KB
 Markoooo — 13:29
-/* ==========================================
-   1. GYÖKÉR VÁLTOZÓK ÉS ALAPBEÁLLÍTÁSOK
-   ========================================== */
+
 :root {
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
@@ -264,9 +262,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================
-   2. FEJLÉC (HEADER) ÉS NAVIGÁCIÓ
-   ========================================== */
+
 header {
     background-color: var(--bg-card);
     padding: 15px 5%;
@@ -304,9 +300,7 @@ header a:hover {
     color: var(--primary-color);
 }
 
-/* ==========================================
-   3. HERO SZEKCIÓ
-   ========================================== */
+
 .hero {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     color: white;
@@ -326,9 +320,7 @@ header a:hover {
     margin: 0 auto;
 }
 
-/* ==========================================
-   4. KERESŐ SZEKCIÓ
-   ========================================== */
+
 .kereses {
     background-color: var(--bg-card);
     padding: 30px 20px;
@@ -336,4 +328,4 @@ header a:hover {
 
 
  
-uggggggggggggggggggggggggggggg
+
