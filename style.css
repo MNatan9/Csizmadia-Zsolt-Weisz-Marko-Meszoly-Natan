@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.kereses {
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.kereses input,
+.kereses select,
+.kereses button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.kategoriak {
+    text-align: center;
+    padding: 20px;
+}
+
+.kategoriak button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.autok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.auto {
+    background: white;
+    width: 300px;
+    padding: 15px;
+}
+
+.auto img {
+    width: 100%;
+}
+
+.auto h3 {
+    margin-bottom: 5px;
+}
+
+.ar {
+    color: blue;
+    font-weight: bold;
+}
+
+.auto button {
+    padding: 10px;
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.auto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+

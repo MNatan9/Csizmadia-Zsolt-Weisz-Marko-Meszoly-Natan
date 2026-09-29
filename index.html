@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <h1>AutoMarket</h1>
+
+        <nav>
+            <a href="#autok">Autók</a>
+            <a href="#motorok">Motorok</a>
+            <a href="#rolunk">Rólunk</a>
+            <button onclick="bejelentkezes()">Bejelentkezés</button>
+            <button onclick="hirdetes()">Hirdetés feladása</button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Találd meg a következő autódat</h2>
+        <p>Használtautók és motorok egyszerűen, egy helyen.</p>
+
+        <div class="kereso">
+            <input type="text" id="kereses" placeholder="Márka vagy modell">
+
+            <select id="marka">
+                <option value="">Minden márka</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Ford">Ford</option>
+                <option value="Seat">Seat</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
+
+            <select id="evjarat">
+                <option value="">Minden évjárat</option>
+                <option value="2020">2020 után</option>
+                <option value="2015">2015 után</option>
+                <option value="2010">2010 után</option>
+                <option value="2005">2005 után</option>
+            </select>
+
+            <select id="ar">
+                <option value="">Minden ár</option>
+                <option value="2000000">2 millió Ft alatt</option>
+                <option value="4000000">4 millió Ft alatt</option>
+                <option value="6000000">6 millió Ft alatt</option>
+                <option value="10000000">10 millió Ft alatt</option>
+            </select>
+
+            <button onclick="kereses()">Keresés</button>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <section>
+        <h2>Járművek</h2>
+
+        <div class="kategoriak">
+            <button onclick="mutatAutok()">Autók</button>
+            <button onclick="mutatMotorok()">Motorok</button>
+            <button onclick="mutatMindet()">Összes</button>
+        </div>
+    </section>
+
+    <section id="autok">
+        <h2>Eladó járművek</h2>
+
+        <div class="autok" id="jarmuvek">
+
+            <div class="auto"
+                data-marka="BMW"
+                data-ev="2019"
+                data-ar="7290000"
+                data-tipus="auto">
+
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80">
+
+                <div class="adatok">
+                    <h3>BMW 320d</h3>
+                    <p>2019 | 145 000 km | Dízel</p>
+
+</div>
+
+<div class="auto">
+    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80">
+    <h3>Mercedes AMG</h3>
+    <p>2018 | Benzin | 120 000 km</p>
+    <p class="ar">5 200 000 Ft</p>
+    <p>Budapest</p>
+    <button onclick="kedvenc(this)">Kedvencekhez</button>
+</div>
+
+<div class="auto">
+    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=600&q=80">
+    <h3>Audi RS6</h3>
+    <p>2020 | Benzin | 180 000 km</p>
+    <p class="ar">4 200 000 Ft</p>
+    <p>Pécs</p>
+    <button onclick="kedvenc(this)">Kedvencekhez</button>
+</div>
+
+<div class="auto">
+    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80">
+    <h3>Fiat</h3>
+    <p>2005 | Benzin | 90 000 km</p>
+    <p class="ar">1 800 000 Ft</p>
+    <p>Szekszárd</p>
+    <button onclick="kedvenc(this)">Kedvencekhez</button>
+</div>
+
+
